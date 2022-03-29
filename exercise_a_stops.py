@@ -10,3 +10,23 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 #8. Sort the list alphabetically
 #9. Reverse the positions of the stops in the list
 #10 Print out all the stops using a for loop
+
+stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
+
+stops.append("Edinburgh Waverly")
+stops.append("Glasgow Queen Street")
+stops.insert(3,"Polmont")
+print(stops)
+print(stops.index("Linlithgow"))
+
+stops.remove("Livingston")
+print(len(stops))
+
+print(sorted(stops))
+
+stops.reverse()
+
+print(stops)
+
+for i in stops:
+    print(i)

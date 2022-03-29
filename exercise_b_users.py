@@ -54,6 +54,49 @@ users = {
   }
 }
 
+print(users["Jonathan"]["twitter"])
+print(users["Erik"]["home_town"])
+print(users["Erik"]["lottery_numbers"])
+print(users["Avril"]["pets"][0]["species"])
+print(min(users["Erik"]["lottery_numbers"]))
+
+for i in (users["Avril"]["lottery_numbers"]):
+    if i % 2 == 0:
+        print(i, end = " ")
+
+#change to meaningful alternative
+x = users["Erik"]["lottery_numbers"] = "[12, 14, 33, 38, 9, 25, 7]"
+print(x)
+
+y = users["Erik"]["pets"] = "Edinburgh"
+print(y)
+
+  
+list1 = {
+      "name": "Fluffy",
+      "species": "dog"
+    }
+
+
+users["Erik"]["pets"].append(list1)
+print(users["Erik"])
+
+list2 = {  "Max": {
+    "twitter": "N/A",
+    "lottery_numbers": [12, 15, 63, 37, 19, 27],
+    "home_town": "Edinburgh",
+    "pets": [
+      {
+        "name": "N/A",
+        "species": "N/A"
+      }
+    ]
+  }
+}
+
+users["Max"] = list2
+
+print([users])
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 # 2. Get Erik's hometown
 # 3. Get the list of Erik's lottery numbers
