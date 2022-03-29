@@ -1,3 +1,6 @@
+from ast import While
+
+
 united_kingdom = [
   {
     "name": "Scotland",
@@ -19,6 +22,28 @@ united_kingdom = [
 united_kingdom [1]["capital"] = 'Cardiff'
 
 print(united_kingdom)
+
+list1 =   {
+    "name": "Northern Ireland",
+    "population": 1811000,
+    "capital": "Belfast"
+  }
+
+united_kingdom.append(list1)
+
+
+print(united_kingdom)
+
+for number in united_kingdom:
+     print(f'{number["name"]}')
+    
+
+total = 0
+for pop in united_kingdom:
+    total += pop["population"]
+
+print(total)
+
 
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 # 2. Create a dictionary for Northern Ireland and add it to the `united_kingdom` list (The capital is Belfast, and the population is 1,811,000).
